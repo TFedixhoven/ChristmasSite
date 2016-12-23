@@ -1,0 +1,331 @@
+@keyframes sexybrows {
+	position: absolute;
+	0%  {top: -30px;}
+	50%	{top: -15px;}
+	100%{top: -30px;}
+}
+
+@keyframes blink {
+	49%, 51% {	height: 40px; top: 45px;	}
+	50% {height: 0; top: 75px;}
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+@keyframes shakeY {
+  10%, 90% {
+    transform: translate3d(0, -1px, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(0, 2px, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(0, -4px, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(0, 4px, 0);
+  }
+}
+
+@keyframes hatlift {
+	position: absolute;
+	0%, 100% {top: -195px;}
+	50% {top: -280px;}
+}
+
+.completeface {
+	position:absolute;
+	left:40%;
+	top:50%;
+}
+
+.completeface > * {
+	position: absolute;
+}
+body {
+	background: red;
+}
+
+.beard {
+	box-shadow: -1px 2px 2px #424242;
+	top: -10px;
+	width: 300px;
+	height: 350px;
+	background: white;
+	border-radius: 50%;
+}
+
+.beard_bottom1 {
+	width: 80px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 220px;
+	left:20px;
+}
+
+.beard_bottom2 {
+	width: 80px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 260px;
+	left:65px;
+}
+
+.beard_bottom3 {
+	width: 80px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 280px;
+	left:110px;
+}
+
+.beard_bottom4 {
+	width: 80px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 260px;
+	left:155px;
+}
+
+.beard_bottom5 {
+	width: 80px;
+	height: 100px;
+	border-radius: 50%;
+	background: white;
+	position: absolute;
+	top: 220px;
+	left:200px;
+}
+
+.beard:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.face {
+	position: relative;
+	left: 50px;
+	top: 5px;
+	width: 200px;
+	height: 130px;
+	background: rgb(255,220,170);
+	border-radius: 50%;
+}
+
+.facehighlight {
+	background: rgb(255,230,180);
+	position: absolute;
+	left: 10px;
+	width: 180px;
+	height: 110px;
+	border-radius: 50%;
+}
+
+.brow {
+	box-shadow: -1px 2px 2px #424242;
+	background: white;
+	width: 70px;
+	height: 30px;
+	position: absolute;
+	top: -30px;
+	right: -5px;
+	border-radius: 30%;
+}
+
+.brow:hover {
+	animation-name: sexybrows;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+.left_eye {	
+	box-shadow: -1px 2px 2px rgb(200,170,120);
+	position: absolute;
+	top: 45px;
+	left: 22px;
+	width: 60px;
+	height: 40px;
+	background: white;
+	border-radius: 50%;
+	animation-name: blink;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+.left_pupil {
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	width: 15px;
+	height: 15px;
+	background: black;
+	border-radius: 50%;
+}
+
+.right_eye {
+	box-shadow: -1px 2px 2px rgb(200,170,120);
+	position: absolute;
+	top: 45px;
+	right: 22px;
+	width: 60px;
+	height: 40px;
+	background: white;
+	border-radius: 50%;
+	animation-name: blink;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+.right_pupil {
+	position: absolute;
+	top: 15px;
+	right: 30px;
+	width: 15px;
+	height: 15px;
+	background: black;
+	border-radius: 50%;
+}
+
+.sparkle {
+	background: white;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+}
+
+.nose {
+	box-shadow: -1px 2px 2px #424242;
+	position: absolute;
+	top: 70px;
+	left: 70px;
+	width: 60px;
+	height: 40px;
+	background: rgb(250,110,110);
+	border-radius: 50%;
+}
+
+.nose:hover {
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.nose_highlight {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 40px;
+	height: 30px;
+	background: rgb(250,130,130);
+	border-radius: 50%;
+}
+
+.leftstache {
+	position: absolute;
+	top: 80px;
+	left: 30px;
+	display:block;
+	width: 90px;
+	height: 50px;
+	background-color: rgb(250,250,250);
+	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+	border-radius:  60%   60%   40%  40% / 50%  50%  50%  50%;
+}
+
+.rightstache {
+	position: absolute;
+	top: 80px;
+	right: 30px;
+	display:block;
+	width: 90px;
+	height: 50px;
+	background-color: rgb(250,250,250);
+	-webkit-border-radius: 63px 63px 63px 63px / 108px 108px 72px 72px;
+	border-radius:  60%   60%   40%  40% / 50%  50%  50%  50%;
+}
+
+.moustache:hover {
+ animation: shakeY 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+.hat {
+	position: absolute;
+	top: -195px;
+	left: 50px;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 200px solid rgb(230,0,0);
+}
+
+.hat:hover {
+	animation-name: hatlift;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+}
+
+.hatcorner {
+	position:relative;
+	left:-105px;
+	top: 190px;
+	width: 210px;
+	height: 40px;
+	background: white;
+	border-radius: 30%;
+	box-shadow: -1px 2px 2px #424242;
+}
+
+.hatball {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	background: white;
+	position: absolute;
+	top: -195px;
+	left: 85px;
+	box-shadow: -1px 2px 2px #424242;
+}
+p {
+	position: absolute;
+	left: 35%;
+	color: white;
+	font-size: 64px;
+	font-weight: bold;
+}
