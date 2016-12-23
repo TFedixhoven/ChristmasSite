@@ -322,10 +322,21 @@ body {
 	left: 85px;
 	box-shadow: -1px 2px 2px #424242;
 }
-p {
-	position: absolute;
-	left: 35%;
+
+.Greeting_text {
+	text-align: center;
 	color: white;
 	font-size: 64px;
 	font-weight: bold;
+}
+
+.text {
+	position: relative;
+	top: -60px;
+}
+
+.signature {
+	position: relative;
+	top: -80px;
+	left: 300px;
 }
