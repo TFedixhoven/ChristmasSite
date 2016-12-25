@@ -329,14 +329,3 @@ body {
 	font-size: 64px;
 	font-weight: bold;
 }
-
-.text {
-	position: relative;
-	top: -60px;
-}
-
-.signature {
-	position: relative;
-	top: -80px;
-	left: 300px;
-}
